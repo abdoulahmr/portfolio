@@ -3,18 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
         <title>Lahmar Abdessalem</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/particles.js" async defer></script>
+        <script type="text/javascript" src="js/app.js" async defer></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,7 +31,8 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
+            <div id="particles-js"></div>
+            <div class="container d-flex align-items-center flex-column first-container">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
                 <!-- Masthead Heading-->
@@ -49,8 +45,15 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Software Engineer</p>
+                <!-- button -->
+                <a class="btn btn-xl btn-outline-light mt-4" href="#portfolio">
+    <i class="fas fa-arrow-down me-2"></i>
+    View My Skills
+</a>
+
             </div>
         </header>
+
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -146,13 +149,15 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ms-auto"><p class="lead">I'm a passionate developer with experience in various fields such as web development, mobile development, UI/UX design, and game development. Currently, I'm focused on artificial intelligence and always excited to learn new technologies and work on challenging projects.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Click below and view my resume!</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">
+                        <img src="assets/img/321962928_544582071044480_8262664379361671464_n.jpg" class="img-fluid rounded-edge" alt="Abdou Lahmar Image">
+                    </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" href="">
                         <i class="fas fa-download me-2"></i>
-                        Download!
+                        Download my resume!
                     </a>
                 </div>
             </div>
@@ -160,8 +165,12 @@
         <!-- Project Section-->
         <section class="page-section bg-white text-black mb-0" id="project">
             <div class="container">
-                <h2 class="text-center text-uppercase text-black">Projects</h2>
-                <hr class="divider light my-4" />
+                <h2 class="text-center text-uppercase text-dark text-black">Latest Projects</h2>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
                 <div class="row text-center">
                     <!-- Dvibes -->
                     <div class="col-lg-3 col-md-6 mb-4">
@@ -199,31 +208,163 @@
             </div>
         </section>
 
-        <!-- Footer-->
-<footer class="footer text-center bg-dark text-white py-4">
-    <div class="container">
-        <div class="row justify-content-center">
-            <!-- Footer Location-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">
-                    Achori Mouldi City<br />
-                    Tebessa, 12000
-                </p>
-            </div>
-            <!-- Footer Social Icons-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/people/Abdou-Lahmar/pfbid036fVWEU3GJLL177UeNkKML7t9KMkZmjS7i65AxGMo1fLAmWMRi7aV3PdPz65HPgmSl/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/abdoulahmr" target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lahmar-abdessalem-92189a24/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/lahmar_abdessalem?igsh=MXNtNm03bGVlZHNsdQ==" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+        <section class="page-section bg-primary text-black mb-0" id="github-projects">
+           <div class="container">
+                <h2 class="text-center text-uppercase text-white mb-4">GitHub Projects</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row">
+                    <!-- Red Shop Project -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Red Shop</h4>
+                                <p class="card-text">An e-commerce platform for local products.</p>
+                                <a href="https://github.com/abdoulahmr/red-shop" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <div class="mt-2">
+                                    <img src="https://img.shields.io/badge/flask-1.1.2-green" alt="Flask Version">
+                                    <img src="https://img.shields.io/badge/HTML-5-red" alt="HTML Version">
+                                    <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript Version">
+                                    <img src="https://img.shields.io/badge/TailwindCSS-2.0.2-blue" alt="TailwindCSS Version">
+                                    <img src="https://img.shields.io/badge/MySQL-3.36.0-blue" alt="MySQL Version">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Project -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Portfolio</h4>
+                                <p class="card-text">My personal portfolio.</p>
+                                <a href="https://github.com/abdoulahmr/portfolio" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <div class="mt-2">
+                                    <img src="https://img.shields.io/badge/flask-1.1.2-green" alt="Flask Version">
+                                    <img src="https://img.shields.io/badge/HTML-5-red" alt="HTML Version">
+                                    <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript Version">
+                                    <img src="https://img.shields.io/badge/Bootstrap-5.1.0-purple" alt="Bootstrap Version">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Red Bird Project -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Red Bird</h4>
+                                <p class="card-text">Flappy Bird, but it's a red one, created using Unity.</p>
+                                <a href="https://github.com/abdoulahmr/red-bird" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <div class="mt-2">
+                                    <img src="https://img.shields.io/badge/Unity-2020.3.14f1-green" alt="Unity Version">
+                                    <img src="https://img.shields.io/badge/C%23-9.0-blue" alt="C# Version">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row of Projects -->
+                <div class="row">
+                    <!-- Dvibes Project -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Dvibes</h4>
+                                <p class="card-text">The first Algerian musical platform that offers musical courses.</p>
+                                <a href="https://github.com/abdoulahmr/dvibes" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <div class="mt-2">
+                                    <img src="https://img.shields.io/badge/flask-1.1.2-green" alt="Flask Version">
+                                    <img src="https://img.shields.io/badge/HTML-5-red" alt="HTML Version">
+                                    <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript Version">
+                                    <img src="https://img.shields.io/badge/Bootstrap-5.1.0-purple" alt="Bootstrap Version">
+                                    <img src="https://img.shields.io/badge/SQLite-3.36.0-blue" alt="SQLite Version">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- University Covid Management Project -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">University Covid Management</h4>
+                                <p class="card-text">Platform for managing COVID-19 vaccination among students, teachers, and university workers.</p>
+                                <a href="https://github.com/abdoulahmr/University-Covid-Vaccin-Manager" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                                <div class="mt-2">
+                                    <img src="https://img.shields.io/badge/flask-1.1.2-green" alt="Flask Version">
+                                    <img src="https://img.shields.io/badge/HTML-5-red" alt="HTML Version">
+                                    <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript Version">
+                                    <img src="https://img.shields.io/badge/CSS-5.1.0-purple" alt="CSS Version">
+                                    <img src="https://img.shields.io/badge/SQLite-3.36.0-blue" alt="SQLite Version">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Selaa Express Project -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title text-black">Selaa Express</h4>
+                                <p class="card-text">A platform connecting local businesses with suppliers in Algeria.</p>
+                                <a href="https://github.com/abdoulahmr/SELAA_v2" class="btn btn-primary" target="_blank">View on GitHub</a>
+                                <div class="mt-2">
+                                    <img src="https://img.shields.io/badge/dart-2.12.0-green" alt="Dart Version">
+                                    <img src="https://img.shields.io/badge/flutter-2.0.6-blue" alt="Flutter Version">
+                                    <img src="https://img.shields.io/badge/firebase-8.6.1-yellow" alt="Firebase Version">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://github.com/abdoulahmr">
+                    View More!
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer text-center bg-dark text-white py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Footer Location-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Achori Mouldi City<br />
+                            Tebessa, 12000
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/people/Abdou-Lahmar/pfbid036fVWEU3GJLL177UeNkKML7t9KMkZmjS7i65AxGMo1fLAmWMRi7aV3PdPz65HPgmSl/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/abdoulahmr" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lahmar-abdessalem-92189a24/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/lahmar_abdessalem?igsh=MXNtNm03bGVlZHNsdQ==" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
