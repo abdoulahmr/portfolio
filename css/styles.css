@@ -10834,7 +10834,7 @@ html {
   padding: 6rem 0;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
@@ -10907,7 +10907,7 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: var(--bs-secondary);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10972,14 +10972,14 @@ html {
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 2rem;
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 10rem;
 }
 
 @media (min-width: 992px) {
@@ -10988,7 +10988,7 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
@@ -11018,20 +11018,91 @@ html {
   font-size: 1.5rem;
 }
 
-.portfolio-modal .btn-close {
-  color: #1abc9c;
+.portfolio-item {
+    height: 100%; /* Allows the item to fill the height */
+}
+
+.portfolio-item-content {
+    flex-grow: 1; /* Makes the content take up remaining space */
+}
+
+/* Optional: Set a minimum height to ensure uniformity */
+.portfolio-item-content {
+    min-height: 300px; /* Adjust this value for uniformity */
+}
+
+
+.project_card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project_card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
   font-size: 2rem;
-  padding: 1rem;
+  color: #333;
+  font-weight: 700;
 }
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
+
+.project_card:hover svg {
+  scale: 0;
 }
-@media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
+
+.card__content__mobile{
+  display: none;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card__description {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.4;
 }
 
 .footer {
@@ -11058,4 +11129,8 @@ html {
     border: 3px solid white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 2vw;
+}
+
+.card__mobile_display{
+  display: none;
 }
